@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo/NV2.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Calcul de dérive</h1>
+        <div class="input-group">
+            <label for="windSpeed">Vitesse du vent (en noeuds) :</label>
+            <input type="number" id="windSpeed">
+        </div>
+        <div class="input-group">
+            <label for="windDirection">Direction du vent (en degrés) :</label>
+            <input type="number" id="windDirection">
+        </div>
+        <div class="input-group">
+            <label for="planeSpeed">Vitesse de l'avion (en noeuds) :</label>
+            <input type="number" id="planeSpeed">
+        </div>
+        <div class="input-group">
+            <label for="planeRoute">Route de l'avion (en degrés) :</label>
+            <input type="number" id="planeRoute">
+        </div>
+        <button onclick="calculate()">Calculer</button>
+        <div id="result"></div>
+    </div>
+    <br>
+    <br>
+    <div id="back-bouton" class="back-bouton">
+        <a href="index.html" class="button2">Retour a la page d'acceuil</a>
+
+    </div>
+    <br>
+    <br>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 NV Tools. Tous droits réservés</p>
+            <p>Un probleme ? Contactez moi via par mail: <a href="mailto:votre_email@example.com">votre_email@example.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

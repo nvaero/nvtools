@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de devis carburant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo/NV2.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+            
+    
+    <div class="container">
+        
+        <h1>Calculateur de devis carburant</h1>
+        <div class="input-group">
+            <label for="consommation">Consommation de l'avion (en litres/heure) :</label>
+            <input type="number" id="consommation">
+        </div>
+        <div class="input-group">
+            <label for="tempsRoulage">Temps de roulage (en minutes) :</label>
+            <input type="number" id="tempsRoulage">
+        </div>
+        <div class="input-group">
+            <label for="tempsDelestage">Temps de vol prévu (en minutes) :</label>
+            <input type="number" id="tempsDelestage">
+        </div>
+        <div class="input-group">
+            <label for="tempsIntegration">Intégration(s) (en minutes) :</label>
+            <input type="number" id="tempsIntegration">
+        </div>
+        <div class="input-group">
+            <label for="tempsDegagement">Terrain de dégagement(en minutes) :</label>
+            <input type="number" id="tempsDegagement">
+        </div>
+        <div class="input-group">
+            <label for="tempsMarge">Marge(en minutes) :</label>
+            <input type="number" id="tempsMarge">
+        </div>
+        <div class="input-group">
+            <label for="tempsCdb">Au choix du CDB(en minutes) :</label>
+            <input type="number" id="tempsCdb">
+        </div>
+        <!-- Ajoutez ici les autres champs pour les différents temps -->
+        
+        <div class="button-group">
+            <label class="round-button">
+                <input type="radio" name="typeVol" value="local" onclick="calculate2()">Vol local
+            </label>
+            <label class="round-button">
+                <input type="radio" name="typeVol" value="jour" onclick="calculate2()">Navigation de jour
+            </label>
+            <label class="round-button">
+                <input type="radio" name="typeVol" value="nuit" onclick="calculate2()">Navigation de nuit
+            </label>
+            
+
+        </div>
+        
+        
+   
+        
+    </div>
+    <div id="popup" class="popup">
+        <br>
+        <br>
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="result" class="result"></div>
+        <br>
+        <br>
+        <button onclick="resetForm()">Réinitialiser</button>
+        <button onclick="generatePDF()">Imprimer</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="back-bouton" class="back-bouton">
+        <a href="index.html" class="button2">Retour a la page d'acceuil</a>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 NV Tools. Tous droits réservés</p>
+            <p>Un probleme ? Contactez moi via par mail: <a href="mailto:votre_email@example.com">votre_email@example.com</a></p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+}
+
+.logo img {
+    height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.colonne {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px); /* Pour avoir 3 colonnes sur les écrans larges */
+    max-width: calc(33.33% - 20px);
+    border: 2px solid white;
+    padding: 10px;
+    display: flex; /* Utilise la disposition flex pour aligner verticalement le contenu */
+    flex-direction: column;
+    border-radius: 20px;
+    
+    
+}
+
+
+.colonne img {
+    max-width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+h2 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+p {
+    margin-bottom: 0px;
+    color: white;
+    
+}
+
+
+
+.button {
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display:block;
+    margin-top:auto;
+    margin-bottom:0;
+    
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media query pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .colonne {
+        flex-basis: calc(50% - 20px); /* Pour avoir 2 colonnes sur les écrans moyens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Media query pour les écrans encore plus petits */
+@media screen and (max-width: 480px) {
+    .colonne {
+        flex-basis: 100%; /* Pour avoir 1 colonne sur les petits écrans */
+        max-width: 100%;
+    }
+}
+
+/* Styles pour le bas de page */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content p:first-child {
+    font-weight: bold; /* Met le texte en gras */
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color:white;
+    border-radius: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.result {
+    margin-bottom: 10px;
+}
+
+.back-bouton {
+    text-align: center;
+}
+.button2 {
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    text-decoration: none;
+    
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align:center;   
+}
+
+.button2:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
